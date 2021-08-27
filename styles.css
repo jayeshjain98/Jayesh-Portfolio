@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #065F46;
+    --primary-color: #24ccd8;
     --off-white: #F3F4F6;
-    --dark-gray: #6B7280;
+    --dark-gray: #D1FAE5;
 }
 
 body {
@@ -24,11 +24,14 @@ hr {
 /** container **/
 .container {
     padding: 0rem 1rem;
+    border-radius: 20px;
+    background-color: var(--dark-gray);
 }
 
 .container-center {
     max-width: 600px;
     margin: auto;
+
 }
 
 /** links **/
@@ -38,6 +41,15 @@ hr {
     padding: 0.5rem 1rem;
 }
 
+.link:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.link-primary:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+}
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
@@ -63,6 +75,7 @@ hr {
 .list-non-bullet {
     list-style: none;
     padding-inline-start: 0px;
+    
 }
 
 .list-item-inline {
@@ -70,13 +83,18 @@ hr {
     padding: 0rem 0.5rem;
 }
 
+.list-non-bullet li{
+    margin-bottom: 1rem;
+}
+
 /** navigation **/
 
 .navigation {
     background-color: var(--primary-color);
+    padding: .5rem .5rem;
     color: white;
-    padding: 1rem;
     border-bottom-left-radius: 1rem;
+    
 }
 
 .navigation .nav-brand {
@@ -98,6 +116,7 @@ hr {
 
 .navigation .link-active {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /** header **/
@@ -118,7 +137,7 @@ hr {
 .hero .hero-heading {
     text-align: center;
     padding-top: 1rem;
-    color: var(--dark-gray);
+    color: darkgray;
 }
 
 .hero .hero-heading .heading-inverted {
@@ -127,12 +146,11 @@ hr {
 
 /** sections **/
 
-.section {
-    padding: 2rem;
-}
+
 
 .section h1 {
     text-align: center;
+    padding: 2rem 1rem;
 
 }
 
@@ -140,11 +158,33 @@ hr {
     background-color: var(--off-white);
 }
 
+.tech-icons{
+    list-style: none;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.tech-icons:hover{
+    list-style: none;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px var(--primary-color);
+}
+
+
 /** footers **/
 
 .footer {
     background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    padding: .5rem .5rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
@@ -171,4 +211,9 @@ hr {
 /** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
+}
+
+.footer-icon{
+    height: 30px;
+    width: 30px;
 }
